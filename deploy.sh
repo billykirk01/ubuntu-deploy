@@ -41,3 +41,6 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz &
 
 # install deno
 curl -fsSL https://deno.land/install.sh | sh
+
+# generate ssh-keys
+ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa
