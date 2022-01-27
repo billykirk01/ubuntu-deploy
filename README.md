@@ -1,12 +1,12 @@
 # ubuntu-deploy
 
-Can be done as a single command
+## Automated
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/deploy.sh | sh
 ```
 
-Or can be done via these manual steps
+## Manual
 
 Update packages
 ```sh
