@@ -20,13 +20,13 @@ sudo apt install -y zsh neovim unzip network-manager rtl8821ce-dkms fd-find
 
 Install oh-my-zsh
 ```sh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.shn | sh
 ```
 
 Install Starship Prompt
 
 ```sh
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+curl -fsSL https://starship.rs/install.sh | sh -s -y
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
 mv starship.toml ~/.config/
 ```
