@@ -1,5 +1,13 @@
 # ubuntu-deploy
 
+Can be done as a single command
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/deploy.sh | sh
+``
+
+Or can be done via these manual steps
+
 Update packages
 ```sh
 sudo apt update && sudo apt upgrade -y
