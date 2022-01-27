@@ -28,6 +28,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 source .zshrc
 
+cargo install exa
+
 ssh-keygen
 
 sudo reboot
