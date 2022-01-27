@@ -1,4 +1,4 @@
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 plugins=(
     git
@@ -15,7 +15,7 @@ alias vim='nvim'
 alias top='htop'
 alias fd='fdfind'
 
-. "$HOME/.cargo/env"
+. ~/.cargo/env
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
