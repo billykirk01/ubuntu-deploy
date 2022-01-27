@@ -28,6 +28,19 @@ Download `.zshrc`
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
 ```
 
+Download `.vimrc`
+```sh
+wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.vimrc
+mkdir -p ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+```
+
+Install vim-plug
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
 Install Rust
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -42,19 +55,6 @@ Install Go
 ```sh
 wget "https://go.dev/dl/$(curl https://go.dev/VERSION\?m\=text).linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz
-```
-
-Download `.vimrc`
-```sh
-wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.vimrc
-mkdir -p ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
-```
-
-Install vim-plug
-```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
 Source the `.zshrc`
