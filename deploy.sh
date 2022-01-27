@@ -11,6 +11,8 @@ fi
 
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 curl -fsSL https://starship.rs/install.sh | sh -s -- -y
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
 mv starship.toml ~/.config/
