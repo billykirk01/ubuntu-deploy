@@ -33,7 +33,7 @@ mv starship.toml ~/.config/
 
 Download `.zshrc`
 ```sh
-wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
+wget -O https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
 ```
 
 Download `.vimrc`
