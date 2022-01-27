@@ -18,6 +18,8 @@ mv starship.toml ~/.config/
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc -O .zshrc
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+. ~/.cargo/env
+cargo install exa
 
 curl -fsSL https://deno.land/install.sh | sh
 
@@ -34,5 +36,3 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 sudo chsh -s $(which zsh) $(whoami)
 
 . ~/.zshrc
-
-cargo install exa
