@@ -11,7 +11,7 @@ fi
 
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 
-yes | curl -fsSL https://starship.rs/install.sh | sh
+curl -fsSL https://starship.rs/install.sh | sh
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
 mv starship.toml ~/.config/
 
