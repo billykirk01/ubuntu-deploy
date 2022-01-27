@@ -9,8 +9,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
-mkdir .config
-mv starship.toml ~/.confg/
+mv starship.toml ~/.config/
 
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
 
