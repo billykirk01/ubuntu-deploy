@@ -68,7 +68,7 @@ curl -fsSL https://deno.land/install.sh | sh
 
 Generate ssh keys
 ```sh
-ssh-keygen
+ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa
 ```
 
 Join a wifi network
