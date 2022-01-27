@@ -26,7 +26,7 @@ sudo apt install -y rtl8821ce-dkms
 
 Install oh-my-zsh and zsh-autosuggestions and set up `.zshrc`
 ```sh
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.shn | sh
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc -O .zshrc
 chsh -s $(which zsh)
@@ -58,7 +58,9 @@ mv starship.toml ~/.config/
 Install go
 ```sh
 wget "https://go.dev/dl/$(curl https://go.dev/VERSION\?m\=text).linux-amd64.tar.gz"
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz
+rm -f go*linux-amd64.tar.gz
 ```
 
 Install deno
