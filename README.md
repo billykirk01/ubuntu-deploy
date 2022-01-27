@@ -28,7 +28,7 @@ Install Starship Prompt
 ```sh
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
-mv starship.toml ~/.confg/
+mkdir .config && mv starship.toml ~/.confg/
 ```
 
 Download `.zshrc`
