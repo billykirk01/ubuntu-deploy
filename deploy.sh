@@ -2,7 +2,7 @@ set -e
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install -y zsh neovim unzip network-manager rtl8821ce-dkms exa fd-find
+sudo apt install -y zsh neovim unzip network-manager rtl8821ce-dkms fd-find
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
