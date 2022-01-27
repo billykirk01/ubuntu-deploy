@@ -15,7 +15,7 @@ sudo apt update && sudo apt upgrade -y
 
 Install additional packages
 ```sh
-sudo apt install -y zsh neovim unzip network-manager rtl8821ce-dkms exa fd-find
+sudo apt install -y zsh neovim unzip network-manager rtl8821ce-dkms fd-find
 ```
 
 Install oh-my-zsh
@@ -52,6 +52,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 Install Rust
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Install exa
+```sh
+cargo install exa
 ```
 
 Install Deno
