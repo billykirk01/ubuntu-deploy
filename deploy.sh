@@ -8,7 +8,7 @@ sudo apt upgrade -y
 sudo apt install -y zsh neovim unzip network-manager build-essential fd-find
 
 # install networking package if this is on GK55
-if [ "$(lspci -nnk | grep 0280)" = *RL8821CE* ]; then 
+if [ "$(lspci -nnk | grep 0280)" = *RTL8821CE* ]; then 
   sudo apt install -y rtl8821ce-dkms
 fi
 
