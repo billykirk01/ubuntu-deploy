@@ -24,7 +24,7 @@ cargo install exa
 curl -fsSL https://deno.land/install.sh | sh
 
 wget "https://go.dev/dl/$(curl https://go.dev/VERSION\?m\=text).linux-amd64.tar.gz"
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz && rm -f go*linux-amd64.tar.gz
 
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.vimrc
 mkdir -p ~/.config/nvim
