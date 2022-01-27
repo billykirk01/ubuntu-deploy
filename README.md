@@ -19,7 +19,12 @@ Install additional packages
 sudo apt install -y zsh neovim unzip network-manager build-essential fd-find
 ```
 
-Install oh-my-zsh and zsh-autosuggestions
+Install additional drives if necessary (like this driver for the wifi card on my GK55.
+```sh
+sudo apt install -y rtl8821ce-dkms
+```
+
+Install oh-my-zsh and zsh-autosuggestions and set up `.zshrc`
 ```sh
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.shn | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -28,22 +33,11 @@ chsh -s $(which zsh)
 zsh
 ```
 
-Install Starship Prompt
-```sh
-curl -fsSL https://starship.rs/install.sh | sh -s -- -y
-wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
-mv starship.toml ~/.config/
-```
-
-Download `.vimrc`
+Setup `.vimrc` and vim-plug
 ```sh
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.vimrc
 mkdir -p ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
-```
-
-Install vim-plug
-```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
@@ -54,9 +48,11 @@ wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc -O 
 cargo install exa
 ```
 
-Install Deno
+Install Starship Prompt
 ```sh
-curl -fsSL https://deno.land/install.sh | sh
+curl -fsSL https://starship.rs/install.sh | sh -s -- -y
+wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
+mv starship.toml ~/.config/
 ```
 
 Install Go
@@ -65,7 +61,17 @@ wget "https://go.dev/dl/$(curl https://go.dev/VERSION\?m\=text).linux-amd64.tar.
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go*linux-amd64.tar.gz
 ```
 
+Install Deno
+```sh
+curl -fsSL https://deno.land/install.sh | sh
+```
+
 Generate ssh keys
 ```sh
 ssh-keygen
+```
+
+Join a wifi network
+```
+sudo nmcli dev wifi connect <ssid> password <password>
 ```
