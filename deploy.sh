@@ -15,7 +15,7 @@ curl -fsSL https://starship.rs/install.sh | sh
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
 mv starship.toml ~/.config/
 
-wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
+wget -O https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
