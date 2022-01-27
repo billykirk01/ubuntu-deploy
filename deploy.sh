@@ -36,5 +36,3 @@ sudo chsh -s $(which zsh) $(whoami)
 . ~/.zshrc
 
 cargo install exa
-
-ssh-keygen
