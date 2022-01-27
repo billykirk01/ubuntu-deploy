@@ -1,6 +1,7 @@
 set -e
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
 sudo apt install -y zsh neovim unzip network-manager rtl8821ce-dkms fd-find
 
@@ -8,7 +9,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/starship.toml
-mkdir .config && mv starship.toml ~/.confg/
+mkdir .config
+mv starship.toml ~/.confg/
 
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc
 
