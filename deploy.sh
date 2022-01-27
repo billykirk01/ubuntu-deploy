@@ -3,7 +3,7 @@ set -e
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y zsh neovim unzip network-manager fd-find
+sudo apt install -y zsh neovim unzip network-manager build-essential fd-find
 
 if [ "$(lspci -nnk | grep 0280)" = *RL8821CE* ]; then 
   sudo apt install -y rtl8821ce-dkms
