@@ -68,6 +68,8 @@ Generate ssh keys
 ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa
 ```
 
+## WiFi setup (optional)
+
 Modify networks settings (optional) to make boot time faster
 ```sh
 sudo vim /etc/netplan/<some file>.yaml
@@ -87,6 +89,7 @@ network:
 Install additional drives if necessary (like this driver for the wifi card on my GK55.
 ```sh
 sudo apt install -y rtl8821ce-dkms
+sudo reboot
 ```
 
 Join a wifi network (optional)
