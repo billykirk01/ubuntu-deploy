@@ -19,11 +19,6 @@ Install additional packages
 sudo apt install -y zsh neovim unzip network-manager build-essential fd-find
 ```
 
-Install additional drives if necessary (like this driver for the wifi card on my GK55.
-```sh
-sudo apt install -y rtl8821ce-dkms
-```
-
 Install oh-my-zsh and zsh-autosuggestions and set up `.zshrc`
 ```sh
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
@@ -71,6 +66,11 @@ curl -fsSL https://deno.land/install.sh | sh
 Generate ssh keys
 ```sh
 ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa
+```
+
+Install additional drives if necessary (like this driver for the wifi card on my GK55.
+```sh
+sudo apt install -y rtl8821ce-dkms
 ```
 
 Join a wifi network (optional)
