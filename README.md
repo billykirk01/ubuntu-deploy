@@ -94,5 +94,5 @@ sudo reboot
 
 Join a wifi network (optional)
 ```
-sudo nmcli dev wifi connect <ssid> password <password>
+sudo nmcli dev wifi connect "Billy's WiFi" password <password>
 ```
