@@ -70,7 +70,7 @@ ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa
 
 Modify networks settings (optional) to make boot time faster
 ```sh
-vim /etc/netplan/<some file>.yaml
+sudo vim /etc/netplan/<some file>.yaml
 
 # This is the network config written by 'subiquity'
 network:
