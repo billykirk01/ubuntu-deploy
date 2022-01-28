@@ -68,6 +68,22 @@ Generate ssh keys
 ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa
 ```
 
+Modify networks settings (optional) to make boot time faster
+```sh
+vim /etc/netplan/<some file>.yaml
+
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp1s0:
+      dhcp4: true
+      optional: true
+    enp2s0:
+      dhcp4: true
+      optional: true
+  version: 2
+```
+
 Install additional drives if necessary (like this driver for the wifi card on my GK55.
 ```sh
 sudo apt install -y rtl8821ce-dkms
