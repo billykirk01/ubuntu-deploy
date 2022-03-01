@@ -11,7 +11,7 @@ sudo apt install -y zsh neovim unzip network-manager build-essential fd-find
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 wget https://raw.githubusercontent.com/billykirk01/ubuntu-deploy/main/.zshrc -O .zshrc
-zsh
+sudo chsh -s $(which zsh) $(whoami)
 
 # install NVM and node
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
